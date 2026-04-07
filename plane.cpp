@@ -14,6 +14,7 @@ void Plane::goToWaypoint(Plane& plane)
         heading = angleToWaypoint; // Update heading towards the waypoint
         x += speed * std::cos(heading);
         y += speed * std::sin(heading);
+        
     }
 }
 

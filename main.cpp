@@ -39,23 +39,17 @@ int main(int argc, char* argv[]) {
         float deltaTime = (currentTime - lastTime) / 1000.0f;
         
         player.goToWaypoint(player);
+        player.rect.x = player.x;
+        player.rect.y = player.y;
         
         
         
         lastTime = currentTime;
-        
-
-
-
-
-
-        
         //RENDER ---
         SDL_SetRenderDrawColor(renderer, 50, 100, 150, 255); 
         SDL_RenderClear(renderer);
         // DRAW THE OBJECTS
         std::cout << "Player Position: (" << player.rect.x << ", " << player.rect.y << ")\n";
-        player2.render(renderer);
         player.render(renderer);
 
         // Present to screen

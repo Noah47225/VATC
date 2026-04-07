@@ -15,8 +15,7 @@ public:
           y(y),
           heading(heading),
           altitude(altitude),
-          speed(speed),
-          currentBank(currentBank)
+          speed(speed)
     {
     }
 
